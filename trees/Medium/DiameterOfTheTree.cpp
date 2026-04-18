@@ -27,3 +27,26 @@ public:
 }; 
 //This is the brute force to solve this question :taking the height of the left and right of the particular node and adding them and recursively calling for left and right tree asking them for maximum .
 //Time Complexity:O(n*n)
+
+//The Optimal Approach//
+
+class Solution {
+public:
+    int diameter=0;
+    int diameter_fast(TreeNode* root)
+    {
+        if(root==NULL)
+        return 0;
+        int left=diameter_fast(root->left);
+        int right=diameter_fast(root->right);
+        diameter=max(diameter,left+right);
+        return max(left,right)+1;
+    }
+    int diameterOfBinaryTree(TreeNode* root) {
+        if(root==NULL)
+        return 0;
+        int k=diameter_fast(root);
+        return diameter;
+        
+    }
+};
