@@ -31,3 +31,18 @@ public:
         
     }
 };
+
+//This is the brute force approach comprimising with the space .
+
+//The Optimal Solution
+
+int height(TreeNode* root)
+{
+    if(root==NULL)
+    return 0;
+
+    int LeftHeight=height(root->left);
+    int RightHeight=height(root->right);
+
+    return max(LeftHeight,RightHeight)+1;
+}
