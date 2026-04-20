@@ -43,8 +43,8 @@ void leftView(node *root, vector<int> &ans, int lvl)
         ans.push_back(root->data);
     }
     lvl++;
-    left(root->left, ans, lvl);
-    left(root->right, ans, lvl);
+    leftView(root->left, ans, lvl);
+    leftView(root->right, ans, lvl);
 }
 int main()
 {
