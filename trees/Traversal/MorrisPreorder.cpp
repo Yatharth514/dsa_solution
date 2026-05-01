@@ -12,6 +12,7 @@ class node
         this->left=NULL;
         this->right=NULL;
     }
+
 };
 node *buildTree(node *root)
 {
@@ -31,45 +32,46 @@ node *buildTree(node *root)
     root->right = buildTree(root->right);
     return root;
 }
-void morris(node* root)
+void preoder_morris(node* root)
 {
-    node*cur=root;
+    node* cur=root;
     while(cur!=NULL)
     {
+        
         if(cur->left==NULL)
-        {
+        {   
             cout<<cur->data<<" ";
             cur=cur->right;
         }
-        else 
+        else
         {
-            node*IP=cur->left;
+            node* IP=cur->left;
             while(IP->right!=NULL&&IP->right!=cur)
             {
                 IP=IP->right;
             }
             if(IP->right==NULL)
-            {
+            {  
+                cout<<cur->data<<" ";
                 IP->right=cur;
                 cur=cur->left;
             }
             else
             {
                 IP->right=NULL;
-                cout<<cur->data<<" ";
+
                 cur=cur->right;
             }
         }
     }
-    return;
+    return ;
 }
 int main()
 {
     node *root = NULL;
     cout << "Enter the data as -1 for not continuing ." << endl;
     root = buildTree(root);
-    cout<<"The Morris Inorder Traversal : ";
-    morris(root);
+    cout<<"The Morris Preorder Traversal : ";
+    preoder_morris(root);
     return 0;
-
 }
