@@ -28,7 +28,7 @@ node *delete_at_tail(node *head)
     temp->next = NULL;
     return head;
 }
-void reverse(node *head)
+void  reverse(node *head)
 {
     if (head == NULL || head->next == NULL)
     {
