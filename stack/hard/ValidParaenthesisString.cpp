@@ -1,36 +1,47 @@
 class Solution {
 public:
-    int scoreOfParentheses(string s) {
-        int n =s.length();
-        int sum=0;
-        stack<int>st;
-        st.push(0);
-        for(int i =0;i<n;i++)
+bool solve(string s,int i ,int n ,int open)
+{
+    if(i==n)
+    {
+        if(open==0)
+        return true;
+        else
+        return false;
+    }
+    if(open<0)
+    return false;
+    if(s[i]=='(')
+    {
+        return solve(s,i+1,n,open+1);
+    }
+    else if(s[i]==')')
+    {
+        return solve(s,i+1,n,open-1);
+    }
+    else
+    {
+        if(solve(s,i+1,n,open))
         {
-            char ch=s[i];
-            if(ch=='(')
-            st.push(0);
-            else
-            {
-                if(st.top()==0)
-                {
-                    st.pop();
-                    int k =st.top();
-                    st.pop();
-                    st.push(k+1);
-                }
-                else
-                {
-                    int k=st.top();
-                    st.pop();
-                    int parent=st.top();
-                    st.pop();
-                    st.push(parent+2*k);
-                }
-            }
+            return true;
         }
-        return st.top();
-       
+        open++;
+        if(solve(s,i+1,n,open))
+        return true;
+        open--;
+        open--;
+        if(solve(s,i+1,n,open))
+        return true;
+        else
+        return false;
+
+    }
+    return false;
+}
+    bool checkValidString(string s) {
+        int n =s.length();
+        int open=0;
+        return solve(s,0,n,open);
         
     }
 }; //this is a brute force approach
