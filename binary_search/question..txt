@@ -1,0 +1,182 @@
+Level 2: Modified arrays and structure
+
+LeetCode: 33 Search in Rotated Sorted Array, 81 (with duplicates), 153 and 154 Find Minimum in Rotated Array, 162 Find Peak Element, 852 Peak Index in Mountain Array, 1095 Find in Mountain Array, 540 Single Element in Sorted Array, 74 and 240 Search a 2D Matrix, 658 Find K Closest Elements, 475 Heaters, 2300 Successful Pairs of Spells and Potions, 981 Time Based Key-Value Store, 1539 Kth Missing Positive Number
+
+GFG: Search in Rotated Array, Find Peak Element, Median of Row-wise Sorted Matrix
+
+Codeforces: 706B Interesting Drink, 492B Vanya and Lanterns, 279B Books
+
+CSES: Concert Tickets, Towers, Increasing Subsequence (LIS with binary search)
+
+Level 3: Binary search on the answer (the core skill)
+
+LeetCode (easier first): 1283 Smallest Divisor Given a Threshold, 875 Koko Eating Bananas, 1011 Capacity to Ship Packages, 1482 Minimum Days to Make m Bouquets, 1760 Minimum Limit of Balls in a Bag, 1870 Minimum Speed to Arrive on Time, 2187 Minimum Time to Complete Trips, 1552 Magnetic Force Between Two Balls, 410 Split Array Largest Sum, 1231 Divide Chocolate, 2226 Maximum Candies Allocated to K Children, 2594 Minimum Time to Repair Cars
+
+GFG: Aggressive Cows, Allocate Minimum Pages, Painter’s Partition, Nth Root of a Number, Minimize Max Distance to Gas Station
+
+Codeforces: 760B Frodo and Pillows, 1201C Maximum Median, 670D1 Magic Powder, 371C Hamburgers, 812C Sagheer and Nubian Market. Also the ITMO Academy “Binary Search” EDU course (Codeforces EDU, Course 2), which is excellent and has built-in practice.
+
+CSES: Factory Machines, Array Division
+
+Level 4: Advanced (BS combined with other techniques)
+
+Combined with graphs (you’re strong here after your graph work): 1631 Path With Minimum Effort, 778 Swim in Rising Water, 2812 Find the Safest Path in a Grid, 2258 Escape the Spreading Fire
+
+Kth-element and counting-based: 378 Kth Smallest in Sorted Matrix, 668 Kth Smallest in Multiplication Table (also Codeforces 448D), 719 Find K-th Smallest Pair Distance, 1201 Ugly Number III, 287 Find the Duplicate Number (BS on value range)
+
+Hard and tricky: 4 Median of Two Sorted Arrays, 774 Minimize Max Distance to Gas Station (real-valued BS), 2141 Maximum Running Time of N Computers, 2528 Maximize the Minimum Powered City, 2560 House Robber IV, 2616 Minimize the Maximum Difference of Pairs, 2398 Robots Within Budget (BS + sliding window)
+
+BS + DP/LIS: 300 LIS, 354 Russian Doll Envelopes, 1235 Maximum Profit in Job Scheduling
+
+Codeforces practice: use the problemset filter with tag “binary search” and rating 1200 to 1800, then push to 2000 once comfortable. Also try a few interactive problems, since they’re pure binary search thinking.
+
+
+Two pointers
+
+Easy: LC 26 Remove Duplicates from Sorted Array, 283 Move Zeroes, 125 Valid Palindrome, 167 Two Sum II, 977 Squares of a Sorted Array, 88 Merge Sorted Array, 75 Sort Colors
+
+Medium: LC 11 Container With Most Water, 15 3Sum, 16 3Sum Closest, 18 4Sum, 1679 Max Number of K-Sum Pairs
+
+Hard: LC 42 Trapping Rain Water (try the two-pointer version after the prefix-max version)
+
+CSES: Sum of Two Values, Sum of Three Values, Sum of Four Values, Ferris Wheel, Playlist
+
+GFG: Pair with Given Sum in Sorted Array, Triplet Sum in Array, Count Pairs with Given Sum
+
+Sliding window
+
+Fixed size: LC 643 Maximum Average Subarray I, 1456 Max Vowels in a Substring of Given Length, 1423 Maximum Points You Can Obtain from Cards, 438 Find All Anagrams, 567 Permutation in String
+
+Variable size, easier: LC 209 Minimum Size Subarray Sum, 3 Longest Substring Without Repeating Characters, 904 Fruit Into Baskets, 713 Subarray Product Less Than K, 1004 Max Consecutive Ones III, 424 Longest Repeating Character Replacement, 1658 Minimum Operations to Reduce X to Zero
+
+Variable size, harder: LC 930 Binary Subarrays With Sum, 1248 Count Number of Nice Subarrays, 992 Subarrays with K Different Integers (the “at most K minus at most K-1” trick), 76 Minimum Window Substring, 239 Sliding Window Maximum (needs a deque)
+
+CSES: Subarray Distinct Values, Playlist
+
+Codeforces: 279B Books, 602B Approximating a Constant Range, 676C Vasya and String. Also do the ITMO Academy “Two Pointers Method” EDU course on Codeforces. It’s the best structured practice for both two pointers and sliding window.
+
+GFG: First Negative Integer in Every Window of Size K, Count Distinct Elements in Every Window, Smallest Window Containing All Characters of Another String
+
+Prefix sum and difference array
+
+Easy: LC 1480 Running Sum, 303 Range Sum Query Immutable, 724 Find Pivot Index, 2559 Count Vowel Strings in Ranges
+
+Medium: LC 560 Subarray Sum Equals K (this is the key one: prefix sum plus a hashmap), 525 Contiguous Array, 974 Subarray Sums Divisible by K, 523 Continuous Subarray Sum, 238 Product of Array Except Self, 304 Range Sum Query 2D, 1094 Car Pooling, 1109 Corporate Flight Bookings
+
+Kadane family: LC 53 Maximum Subarray, 152 Maximum Product Subarray
+
+CSES: Static Range Sum Queries, Subarray Sums I and II, Subarray Divisibility, Maximum Subarray Sum
+
+Codeforces: 313B Ilya and Queries, 363B Fence, 816B Karen and Coffee, 466C Number of Ways, 295A Greg and Array (difference array)
+
+GFG: Equilibrium Point, Largest Subarray with 0 Sum, Longest Subarray with Sum Divisible by K
+
+Miscellaneous array patterns
+
+Hashing and counting: LC 1 Two Sum, 128 Longest Consecutive Sequence, 169 Majority Element (Boyer-Moore), 229 Majority Element II
+
+In-place tricks (using the array as its own index): LC 448 Find All Numbers Disappeared, 287 Find the Duplicate Number, 41 First Missing Positive, 189 Rotate Array, 31 Next Permutation, 73 Set Matrix Zeroes
+
+Intervals: LC 56 Merge Intervals, 57 Insert Interval, 452 Minimum Number of Arrows to Burst Balloons
+
+Greedy on arrays: LC 121 and 122 Best Time to Buy and Sell Stock, 55 Jump Game, 45 Jump Game II, 134 Gas Station, 135 Candy
+
+Monotonic stack: LC 739 Daily Temperatures, 496 Next Greater Element I, 84 Largest Rectangle in Histogram
+
+Matrix handling: LC 48 Rotate Image, 54 Spiral Matrix
+
+CSES warm-ups: Missing Number, Increasing Array, Repetitions, Distinct Numbers, Stick Lengths, Missing Coin Sum, Collecting Numbers
+
+Suggested order
+Two pointers easy, then fixed-size sliding window, then prefix sum easy. These build the basic feel.
+Variable-size sliding window and Subarray Sum Equals K. This is where intuition forms.
+Mix the patterns. Take a problem, don’t look at the tag, and ask which pattern it is.
+Then the hard ones: 76, 239, 992, 42.
+Pattern signals to look for
+“Subarray with sum or length condition” with only positive numbers points to sliding window. If negatives are allowed, sliding window usually breaks, so think prefix sum plus hashmap.
+“Sorted array, find a pair or triplet” points to two pointers.
+“Many range queries” points to prefix sum.
+“Count subarrays with exactly K” often means (at most K) minus (at most K-1).
+
+
+
+Intuition for the string-specific patterns:
+
+Frequency array (cnt[26]): a tally sheet. Two words are anagrams if their tally sheets match, and you never need to sort.
+Stack for parsing: a pile of plates. Brackets and nested things close in the reverse order they open, which is exactly how a stack behaves.
+Expand around center: drop a pebble in a pond and watch the ripple spread while both sides match. Every palindrome has a center.
+Prefix function / KMP: when a match fails, don’t restart from zero. You already know the longest piece of the pattern that still matches, so you jump back to it.
+Basics and frequency counting
+
+LeetCode: 344 Reverse String, 125 Valid Palindrome, 242 Valid Anagram, 387 First Unique Character, 383 Ransom Note, 409 Longest Palindrome, 14 Longest Common Prefix, 392 Is Subsequence, 205 Isomorphic Strings, 290 Word Pattern, 49 Group Anagrams, 151 Reverse Words in a String, 8 String to Integer (atoi), 6 Zigzag Conversion
+
+Codeforces (warm-ups, 800 rating): 71A Way Too Long Words, 112A Petya and Strings, 118A String Task, 281A Word Capitalization, 59A Word, 4C Registration System
+
+GFG: Anagram, Check if Strings are Rotations, Implement Atoi, Roman Number to Integer, Longest Common Prefix
+
+CSES: Repetitions, Palindrome Reorder
+
+Two pointers on strings
+
+LeetCode: 680 Valid Palindrome II, 345 Reverse Vowels, 541 Reverse String II, 763 Partition Labels, 1768 Merge Strings Alternately, 696 Count Binary Substrings
+
+Sliding window (strings are where this shines)
+
+LeetCode: 3 Longest Substring Without Repeating Characters, 424 Longest Repeating Character Replacement, 567 Permutation in String, 438 Find All Anagrams, 1456 Max Vowels in a Substring, 76 Minimum Window Substring, 340 Longest Substring with At Most K Distinct Characters (premium, or 904 Fruit Into Baskets as the same idea)
+
+Codeforces: 676C Vasya and String, 1367A Short Substrings (easy warm-up)
+
+CSES: Playlist, Subarray Distinct Values
+
+Stack-based
+
+LeetCode: 20 Valid Parentheses, 921 Minimum Add to Make Parentheses Valid, 1021 Remove Outermost Parentheses, 1047 Remove All Adjacent Duplicates, 71 Simplify Path, 394 Decode String, 402 Remove K Digits, 316 Remove Duplicate Letters, 32 Longest Valid Parentheses, 22 Generate Parentheses (backtracking)
+
+GFG: Parenthesis Checker, Minimum Number of Bracket Reversals
+
+Palindromes
+
+LeetCode: 5 Longest Palindromic Substring, 647 Palindromic Substrings, 516 Longest Palindromic Subsequence (DP), 131 Palindrome Partitioning (backtracking), 1312 Minimum Insertion Steps to Make a String Palindrome, 214 Shortest Palindrome (KMP idea)
+
+CSES: Longest Palindrome (Manacher’s algorithm, advanced)
+
+Pattern matching: prefix function, Z-function, hashing
+
+Learn the prefix function first (cp-algorithms has a clear page), since it makes the rest easier.
+
+LeetCode: 28 Find Index of First Occurrence, 459 Repeated Substring Pattern, 1392 Longest Happy Prefix, 187 Repeated DNA Sequences, 1044 Longest Duplicate Substring (rolling hash plus binary search on the length, a nice bridge back to your binary search work)
+
+CSES: String Matching, Finding Borders, Finding Periods, Minimal Rotation
+
+Codeforces: 126B Password, 432D Prefixes and Suffixes, 471D MUH and Cube Walls
+
+GFG: Search Pattern (KMP), Longest Prefix Suffix
+
+Trie
+
+LeetCode: 208 Implement Trie, 211 Design Add and Search Words, 648 Replace Words, 1268 Search Suggestions System, 212 Word Search II (harder, trie plus backtracking)
+
+DP on strings (do these after your DP basics)
+
+LeetCode: 1143 Longest Common Subsequence, 72 Edit Distance, 139 Word Break, 91 Decode Ways, 115 Distinct Subsequences, 97 Interleaving String, 44 Wildcard Matching, 10 Regular Expression Matching
+
+CSES: Edit Distance, Word Combinations, Required Substrings
+
+Suggested order
+Frequency and basics (10 problems), then two pointers on strings.
+Sliding window problems on strings, since you’ll have just done them for arrays.
+Stack problems: 20, 394 and 402 teach the core idea.
+Palindromes with expand-around-center, then prefix function.
+Trie, then DP on strings alongside your DP practice.
+Skip suffix arrays and Manacher until you’re comfortable with the rest.
+Pattern signals
+“Anagram”, “permutation of”, “same characters” points to a frequency array, often with a fixed-size window.
+“Longest/shortest substring with a condition” points to sliding window.
+“Brackets”, “nested”, “decode”, “undo the last character” points to a stack.
+“Palindrome” points to expand around center (or DP if you need subsequences).
+“Prefix equals suffix”, “border”, “period”, “find a pattern in text” points to the prefix function.
+“Many words sharing prefixes” points to a trie.
+“Two strings, compare or transform” points to DP.
+Two C++ habits that will save you hours
+Use cnt[s[i] - 'a'] for lowercase frequency arrays, and check the constraints for uppercase, digits, or mixed input before assuming 26.
+Watch s.size() - 1 when the string is empty. size() is unsigned, so it wraps to a huge number instead of -1. It’s the same family of boundary bugs you hit in Apartments.
